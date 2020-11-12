@@ -38,6 +38,7 @@ export default class SignUp extends Component {
                 <h2>Secure Sign Up</h2>
                 <form className="password" onSubmit={this.handleSubmit}>
                     <label>
+                        {this.state.error && <div style={{color:'red'}}>{this.state.error}</div>}   
                         Email: 
                         <input onChange={(e) => this.setState({ email: e.target.value })}
                         value={this.state.email} />    
