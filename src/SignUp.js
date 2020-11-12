@@ -30,13 +30,13 @@ export default class SignUp extends Component {
         return (
             <div>
                 <h2>Sign Up</h2>
-                <form onSubmit={this.handleSubmit}>
+                <form className="password" onSubmit={this.handleSubmit}>
                     <label>
                         Email: 
                         <input onChange={(e) => this.setState({ email: e.target.value })}
                         value={this.state.email} />    
                     </label>
-                    <label>
+                    <label >
                         Password:
                         <input onChange={(e) => this.setState({ password: e.target.value })}
                         value={this.state.password} type="password"/>
@@ -44,7 +44,7 @@ export default class SignUp extends Component {
                     {
                         this.state.loading
                         ? "Spin City"
-                        : <button>Sign Up You Dolt!</button>
+                        : <button>Sign Up</button>
                     }
                     
                 </form>            

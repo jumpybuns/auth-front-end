@@ -49,8 +49,8 @@ export default class App extends Component {
               <button onClick={this.logOut}>Log out</button>
             </div>
           : <>
-           <Link to="/login"><div>log in</div></Link>
-            <Link to="/signup"><div>sign up</div></Link>
+           <Link className="link1" to="/login"><div>Login</div></Link>
+            <Link className="link2" to="/signup"><div>Sign Up</div></Link>
             </>}
           </ul>
           <Switch>

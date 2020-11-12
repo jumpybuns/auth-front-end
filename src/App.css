@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body{
+  grid-template-columns: auto;
+  background-color:rgb(255, 187, 187);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing:3px;
+  padding:20px;
+  background-image: url('./chores.png');
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  background-position: 45% 10%;
+  
+}
+.link1 {
+  position: relative;
+  left: 50px;
+
+}
+.link2 {
+  position: relative;
+  left: 550px;
+  bottom: 20px;
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home {
+  position: relative;
+  left: 280px;
+  top: 50px;
+}
+.pic {
+  background-image: url('appletree.jpg');
+  border-radius: 50%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.password {
+  padding: 30px;
 }
