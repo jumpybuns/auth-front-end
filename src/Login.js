@@ -47,7 +47,7 @@ export default class Login extends Component {
                 {
                     this.state.loading
                     ? 'Spin City'
-                    : <button>Log In Y'All!</button>
+                    : <button className="myButton">Log In Y'All!</button>
                 }
               </form>  
             </div>

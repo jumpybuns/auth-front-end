@@ -70,7 +70,7 @@ export default class Todos extends Component {
                         <input value={todo} onChange={(e) => this.setState({ todo: e.target.value })} />
                     </label>
                     <label>
-                        <button className="button">Add</button>
+                        <button className="myButton">Add</button>
                     </label>
                 </form>
                 {
@@ -82,7 +82,7 @@ export default class Todos extends Component {
                     todo: {todo.todo}
                     {
                         todo.completed ? '' 
-                        : <button onClick={() => this.handleCompletedClick(todo.id)}>
+                        : <button className="myButton" onClick={() => this.handleCompletedClick(todo.id)}>
                         Complete Todo </button>
                     }
                     </div>)
