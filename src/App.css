@@ -7,28 +7,29 @@ body{
   background-image: url('./chores.png');
   background-repeat: no-repeat;
   background-size: 300px 100px;
-  background-position: 45% 10%;
+  background-position: 45% -40%;
   
 }
 .link1 {
-  position: relative;
-  left: 50px;
+  position: absolute;
+  left: 15%;
 
 }
-.link2 {
-  position: relative;
-  left: 550px;
-  bottom: 20px;
-  
 
+.link2 {
+  position: absolute;
+  right: 15%;
+  
 }
 
 .Home {
-  position: relative;
-  left: 280px;
-  top: 50px;
+  position: absolute;
+  left: 12%;
+  top: 35%;
 }
 .pic {
+  position: absolute;
+  right: 40%;
   background-image: url('appletree.jpg');
   border-radius: 50%;
 
