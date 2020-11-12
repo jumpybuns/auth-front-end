@@ -6,15 +6,16 @@ export default class SignUp extends Component {
     state = {
         email: '',
         password: '',
-        loading: false
+        loading: false,
+        error: null
     }
 
     handleSubmit = async (e) => {
         e.preventDefault();
 
         console.log(this.state);
-
-        this.setState({ loading:true })
+        try {
+        this.setState({ loading:true, error: null })
         const user = await request
             .post(`https://aqueous-everglades-52783.herokuapp.com/auth/signup`)
             .send(this.state);
@@ -23,13 +24,18 @@ export default class SignUp extends Component {
 
         this.props.changeTokenAndUsername(user.body.email, user.body.token);
         this.props.history.push('/todos');
+        } catch(e) {
+            this.setState({
+                error: `${e.message} : refresh and try again`
+            })
+        }
 
     
     }
     render() {
         return (
-            <div>
-                <h2>Sign Up</h2>
+        <div className="signup">
+                <h2>Secure Sign Up</h2>
                 <form className="password" onSubmit={this.handleSubmit}>
                     <label>
                         Email: 

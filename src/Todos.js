@@ -62,15 +62,15 @@ export default class Todos extends Component {
             todos
         } = this.state;
         return (
-            <div>
-                You're Gonna Help Your Poor Old Mother Ain'cha?
-                <form classname="todos" onSubmit={this.handleSubmit}>
+            <div className="list">
+                <p classname="You">You're Gonna Help Your Poor Old Mother Ain'cha?</p>
+                <form className="todos" onSubmit={this.handleSubmit}>
                     <label>
                         Add A Todo:
                         <input value={todo} onChange={(e) => this.setState({ todo: e.target.value })} />
                     </label>
                     <label>
-                        <button>Add</button>
+                        <button className="button">Add</button>
                     </label>
                 </form>
                 {

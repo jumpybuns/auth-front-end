@@ -3,12 +3,6 @@ body{
   background-color:rgb(255, 187, 187);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing:3px;
-  padding:20px;
-  background-image: url('./chores.png');
-  background-repeat: no-repeat;
-  background-size: 300px 100px;
-  background-position: 45% -40%;
-  
 }
 .link1 {
   position: absolute;
@@ -23,15 +17,29 @@ body{
 }
 
 .Home {
+  font-size: 1.5rem;
   position: absolute;
-  left: 12%;
-  top: 35%;
+  left: 10%;
+  top: 40%;
+}
+.Home2 {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 42%;
+  top: 70%;
+}
+.chorepic {
+  position: absolute;
+  right: 33%;
+  background-image: url('appletree.jpg');
+  border-radius: 50%;
+  
+
 }
 .pic {
   position: absolute;
-  right: 40%;
+  right: 10%;
   background-image: url('appletree.jpg');
-  border-radius: 50%;
 
 }
 
@@ -40,8 +48,31 @@ body{
 }
 
 .todos {
-  position: absolute;
-  left: 40%;
-  top: 40%;
+  margin-top: 20px;
+  position: absolute; 
+  right:-20%;
+  top: 80%;
   padding: 20px
+}
+
+.list {
+  margin-top: 20px;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+
+.signup {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.You {
+  margin: 10px;
+}
+
+.login {
+  position: absolute;
+  top: 30%;
 }

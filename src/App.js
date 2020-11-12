@@ -8,6 +8,7 @@ import Home from './Home.js';
 import SignUp from './SignUp.js';
 import Todos from './Todos.js';
 import PrivateRoute from './PrivateRoute.js'
+import Header from './Header.js';
 
 export default class App extends Component {
   state = {
@@ -40,6 +41,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <Router>
           <ul>
             {
@@ -49,8 +51,8 @@ export default class App extends Component {
               <button onClick={this.logOut}>Log out</button>
             </div>
           : <>
-           <Link className="link1" to="/login"><div>Login</div></Link>
-            <Link className="link2" to="/signup"><div>Sign Up</div></Link>
+           <Link className="link1" to="/signup"><div>Sign Up</div></Link>
+            <Link className="link2" to="/login"><div>Login</div></Link>
             </>}
           </ul>
           <Switch>
@@ -63,8 +65,7 @@ export default class App extends Component {
               } 
             />
             <Route 
-              exact 
-              path='/signup' 
+              exact path='/signup' 
               render={(routerProps) => 
                   <SignUp  
                     {...routerProps} 
