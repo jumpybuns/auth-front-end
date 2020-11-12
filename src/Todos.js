@@ -14,7 +14,7 @@ export default class Todos extends Component {
         await this.fetchTodos()
     }
 
-    fetchTodos = async => {
+    fetchTodos = async () => {
         const { token } = this.props;
         
         await this.setState({ loading: true });

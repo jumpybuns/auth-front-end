@@ -18,7 +18,7 @@ export default class Login extends Component {
             .send(this.state);
 
         this.setState({ loading:false })
-        this.props.changeTokenAndUsername(this.body.email, this.body.token);
+        this.props.changeTokenAndUsername(user.body.email, user.body.token);
         this.props.history.push('/todos');
 
     }
