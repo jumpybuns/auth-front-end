@@ -1,4 +1,3 @@
-import e from 'express';
 import React, { Component } from 'react'
 import request from 'superagent'
 

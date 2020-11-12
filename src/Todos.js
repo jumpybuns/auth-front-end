@@ -46,7 +46,7 @@ export default class Todos extends Component {
 
     };
 
-    handleCompletedClick = async (e) => {
+    handleCompletedClick = async (someId) => {
         const { token } = this.props;
 
         await request.put(`https://aqueous-everglades-52783.herokuapp.com/api/todos/${someId}`)

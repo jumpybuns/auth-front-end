@@ -15,7 +15,7 @@ export default class App extends Component {
     token: localStorage.getItem('TOKEN') || '',
   }
 
-  changTokenAndUsername = (bemis1, bemis2) => {
+  changeTokenAndUsername = (bemis1, bemis2) => {
     localStorage.setItem('TOKEN', bemis2);
     localStorage.setItem('USERNAME', bemis1);
     
