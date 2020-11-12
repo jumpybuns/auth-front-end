@@ -17,7 +17,7 @@ export default class Todos extends Component {
     fetchTodos = async => {
         const { token } = this.props;
         
-        await this.setState({ loading:true });
+        await this.setState({ loading: true });
         
         const response = await request.get('https://aqueous-everglades-52783.herokuapp.com/api/todos')
         .set('Authorization', token)
